@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Abyssinica SIL', serif;
 }
 
 #main-nav{
@@ -30,6 +31,19 @@ a{
     margin-top: -10px;
 }
 
+.nav__bar{
+    background-color: #fff;
+    width: 60px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+
+.nav__bar > img{
+    width: 50px;
+    height: 50px;
+}
+
 
 .nav__logo > img{
     width: 80px;
@@ -52,6 +66,7 @@ a{
 .login{
     text-align: right;
     margin-right: 20px;
+    position: relative;
 }
 
 .nav__login{
@@ -77,8 +92,29 @@ a{
 }
 
 
+
 .nav__social-media{
-    margin-top: 10px;
+    background-color: #fff;
+    padding-top: 4px;
+    padding-left: 2px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: 90%;
+    
+}
+
+.nav__social-media > img{
+   width: 40px;
+   height: 40px;
+}
+
+.nav__social-media + span{
+    color: #fff;
+    position: absolute;
+    top: 65%;
+    right: 50px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
