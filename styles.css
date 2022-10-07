@@ -6,14 +6,14 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 body{
-    height: 2000px;
+    height: 3000px;
     background: radial-gradient(circle ,#fff, rgb(112, 112, 112));
 }
 
 #main-nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: url(./Assets/daily-paper-g5555c0304_1920.jpg);
+    background-image: url(./Assets/daily-paper-g5555c0304_1920.jpg);/*Aqui cambian por la imagen de Fondo*/
     background-position: 95%;
     
     
@@ -35,6 +35,7 @@ a{
     flex-flow: column;
     align-items: center;
     margin-top: -10px;
+    transform: scale(1.2);
 }
 
 .nav__bar{
@@ -60,7 +61,7 @@ a{
     background: radial-gradient(circle ,#fff, rgb(112, 112, 112));
     border-radius: 20px;
     text-align: center;
-    width: 280px;
+    width: 330px;
     
 }
 
@@ -138,7 +139,7 @@ a{
 .slider{
     display: flex;
     width: 400%;
-    height: 400px;
+    height: 410px;
     animation: slide 20s infinite;
     animation-direction: alternate;
     
@@ -253,7 +254,61 @@ a{
 .main-container{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+
     justify-content: center;
+}
+
+.secundary-notices .image-hover > img{
+    width: 270px;
+    height: 190px;
+}
+
+.secundary-notices{
+    height: 410px;
+    width: 550px;
+    margin-left: 10px;
+   
+   
+}
+
+.seccion-secundary{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    
+}
+
+
+.secundary-notices  .blur2,.secundary-notices  .blur3,
+.secundary-notices  .blur4,
+.secundary-notices  .blur5{
+    
+    width: 270px;
+    height: 190px;
+}
+
+.secundary-notices  .blur2{
+    top: 0;
+    left: 0;
+}
+
+.secundary-notices  .blur3{
+    right: 0;
+    top: 0;
+}
+
+.secundary-notices  .blur4{
+    right: 0;
+    bottom: 10px;
+}
+.secundary-notices  .blur5{
+    left: 0;
+    bottom: 10px;
 }
 
 .register-option{
@@ -347,12 +402,17 @@ a{
     z-index: 40;
 }
 
+.blur1{
+     top: 60px;
+    left: 60px;
+}
+
+
 .blur{
     
     position: absolute;
     border-radius: 20px;
-    top: 60px;
-    left: 60px;
+   
     font-weight: bold;
     color: #fff;
     font-size: 40px;
@@ -377,12 +437,6 @@ a{
 
 
 
-
-
-
-
-
-
 .seccion > .seccion-title{
     padding-top: 50px;
     width: 40%;
@@ -392,5 +446,72 @@ a{
     text-align: center;
 }
 
+/*Login De ingreso*/
+
+.login2{
+    width: 400px;
+    background-color: #ffff;
+    padding: 55px;
+    border-radius: 10px;
+    background: linear-gradient(304deg, #f5f5f5, #d7d0fa 50%, #b7acfd 60%, #9488ff 60%, #6a65ff);
+   
+    
+}
 
 
+
+.login2 img{
+    width: 80px;
+}
+
+.form > label{
+    font-weight: bold;
+}
+
+.form-container, .form{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    text-align: left;
+    
+}
+
+.form input, .form-container button{
+    border: 1px solid #222;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form input:focus{
+    background-color: #fff;
+    border: none; 
+}
+
+/*Pie de Pagina*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+}
+
+.footer-container{
+    margin-top: 150px;
+    border-top: 4px solid rgba(17, 17, 170, 0.49);
+    width: 80%;
+}
+footer img{
+    position: absolute;
+    width: 350px;
+    bottom: 0;
+    left: 0;
+}
+
+footer span{
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+}
