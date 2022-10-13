@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    
+    background-image: linear-gradient(to left top, #150a36, #0d152f, #0f1a41, #0b148d, #061a94);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body > img {
+    width: 140px;
+    position: absolute;
+    top: 100%;
+    
+    
+    
+}
+
+body > .animation1{
+    right: 0;
+    animation: girar 10s infinite;
+}
+
+body > .animation2{
+    left: 0%;
+    animation: girar 10s infinite 8s;
+}
+body > .animation3{
+    right: 43%;
+    animation: girar 10s infinite 4s;
+}
+
+
+
+@keyframes girar {
+   0%{
+    top: 100%;
+    transform: rotate(360deg);
+   }
+
+   100%{
+    top:-140px;
+   }
+}
+
+
+.login2{
+    width: 400px;
+    
+    background-color: #ffff;
+    padding: 55px;
+    border-radius: 10px;
+    background: linear-gradient(304deg, #f5f5f5, #d7d0fa 50%, #b7acfd 60%, #9488ff 60%, #6a65ff);
+   
+    z-index: 999;
+}
+
+
+
+.login2 img{
+    width: 80px;
+}
+
+.form > label{
+    font-weight: bold;
+}
+
+.form-container, .form{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    text-align: left;
+    
+}
+
+.form input, .form-container button{
+    border: 1px solid #222;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form input:focus{
+    background-color: #fff;
+    border: none; 
+}
