@@ -7,7 +7,7 @@
 }
 body{
     
-    background: radial-gradient(circle ,#fff, rgb(112, 112, 112));
+    background-image: radial-gradient(circle, #c4c1e8, #a49ded, #827af0, #5a56f0, #0f2eee);
 }
 
 
