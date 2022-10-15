@@ -6,19 +6,20 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 body{
-    
-    background-image: radial-gradient(circle, #c4c1e8, #a49ded, #827af0, #5a56f0, #0f2eee);
+    background-color: rgb(255, 255, 255);
+    /* background-image: linear-gradient(to right, #1136e5, #006cfa, #0093fa, #00b3ef, #7dcee5, #a3d9e4, #c6e3e7, #e8eded, #e7eeee, #e6efee, #e5efef, #e4f0ef); */
+
 }
 
 
 #main-nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: url(https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);/*Aqui cambian por la imagen de Fondo*/
+    /* background-image: url(https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);Aqui cambian por la imagen de Fondo
     background-position: 95%;
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; */
+    background-image: linear-gradient(to right, #1136e5, #006cfa, #0093fa, #00b3ef, #7dcee5, #a3d9e4, #c6e3e7, #e8eded, #e7eeee, #e6efee, #e5efef, #e4f0ef);
     height: 140px;
     border-radius: 40px;
     margin: 10px 20px;
@@ -65,16 +66,17 @@ a{
 }
 
 .seccion-links{
-    background: radial-gradient(circle ,rgb(44,44,44), rgb(44,54,44));
+    
     border-radius: 20px;
     text-align: center;
     width: 330px;
-    color: #ff2828;
+    color: #000000;
 }
 
 .seccion-links > a{
    margin-right: 10px;
-   color: #fff;
+   color: rgb(120, 114, 114);
+   font-weight: bold;
 }
 
 .login{
@@ -84,16 +86,15 @@ a{
 }
 
 .nav__login{
-    background: radial-gradient(circle ,rgb(44,44,44), rgb(44,54,44));
+   font-weight: bold;
     width: 60px;
     text-align: center;
     border-radius: 20px;
-    color: #fff;
+    color: rgb(78, 76, 76);
 }
 
 .nav__login-user{
     display: inline-block;
-    margin-right: 10px;
     height: 50px;
     width: 50px;
     background-image: url(./Assets/icons8-usuario-masculino-en-círculo-64.png);
@@ -109,7 +110,7 @@ a{
 
 
 .nav__social-media{
-    background: radial-gradient(circle ,rgb(44,44,44), rgb(44,54,44));
+    
     padding-top: 4px;
     padding-left: 2px;
     border-radius: 10px;
@@ -124,9 +125,9 @@ a{
 }
 
 .nav__social-media + span{
-    color: #fff;
+    color: rgb(104, 104, 104);
     position: absolute;
-    top: 65%;
+    top: 55%;
     right: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -362,6 +363,7 @@ a{
     align-items: center;
     border-radius: 40px;
     gap: 80px;
+    /* background-image: linear-gradient(to left top, #cbcbcb, #ccccd0, #cdcdd6, #cdcfdb, #cdd0e1); */
     box-shadow: 0 15px 50px #000;
     width: fit-content;
     height: fit-content;
@@ -391,7 +393,7 @@ a{
     width: 1200px;
     height: 370px;
     border-radius: 20px;
-    outline: 9px solid #fff ;
+    
     z-index: 40;
 }
 
@@ -477,15 +479,5 @@ footer span{
 
 /*Scroll*/
 
-body::-webkit-scrollbar{
-    width: 10px ;
-    background-color: rgb(112, 112, 112);
-
-}
-
-body::-webkit-scrollbar-thumb{
-    background-color: #001a5c;
-    border-radius: 20px;
-}
 
 

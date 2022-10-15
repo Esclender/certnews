@@ -8,13 +8,15 @@
 
 body{
     
-    background-image: linear-gradient(to left top, #150a36, #0d152f, #0f1a41, #0b148d, #061a94);
-    height: 900px;
+    background-image: linear-gradient(to right, #1136e5 , #006cfa , #0093fa, #00b3ef, #7dcee5, #a3d9e4, #c6e3e7, #e8eded , #e7eeee, #e6efee, #e5efef, #e4f0ef);
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     position: relative;
     overflow: hidden;
+    
 }
 
 body > img {
@@ -27,15 +29,18 @@ body > img {
 }
 
 body > .animation1{
+    top: 150%;
     right: 0;
     animation: girar 10s infinite;
 }
 
 body > .animation2{
+    top: 150%;
     left: 0%;
     animation: girar 10s infinite 8s;
 }
 body > .animation3{
+    top: 150%;
     right: 43%;
     animation: girar 10s infinite 4s;
 }
@@ -44,7 +49,7 @@ body > .animation3{
 
 @keyframes girar {
    0%{
-    top: 100%;
+    
     transform: rotate(360deg);
    }
 
@@ -53,23 +58,29 @@ body > .animation3{
    }
 }
 
+.login3{
+    height: 300;
+}
+
 
 
 .login2{
-    width: 400px;
-    margin-bottom: 20%;
-    background-color: #ffff;
+    width: 500px;
+    height: 600px;
+    align-self: center;
+    
     padding: 55px;
     border-radius: 10px;
     background: linear-gradient(304deg, #f5f5f5, #d7d0fa 50%, #b7acfd 60%, #9488ff 60%, #6a65ff);
    
     z-index: 999;
+    box-shadow: 0 10px 40px #000;
 }
 
 
 
 .login2 img{
-    width: 80px;
+    width: 90px;
 }
 
 .form > label{
@@ -79,17 +90,21 @@ body > .animation3{
 .form-container, .form{
     display: flex;
     flex-flow: column;
+    
     gap: 10px;
     text-align: left;
+
     
 }
 
 .form input, .form-container button{
     border: 1px solid #222;
     background-color: transparent;
-    padding: 8px;
+    padding: 10px;
+    
     border-radius: 10px;
     outline: none;
+    font-size: 16px;
 }
 
 .form input:focus{
