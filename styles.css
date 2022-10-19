@@ -6,8 +6,8 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 body{
-    background-color: rgb(255, 255, 255);
-    /* background-image: linear-gradient(to right, #1136e5, #006cfa, #0093fa, #00b3ef, #7dcee5, #a3d9e4, #c6e3e7, #e8eded, #e7eeee, #e6efee, #e5efef, #e4f0ef); */
+    background-image: linear-gradient(to right top, #29c494, #00c4af, #00c3c6, #00c1d8, #00bde5, #4bc0ee, #6fc2f4, #8cc5f8, #b5d1fb, #d4dffc, #edeefd, #ffffff);
+   
 
 }
 
@@ -66,16 +66,16 @@ a{
 }
 
 .seccion-links{
-    
+    background-color: gray;
     border-radius: 20px;
     text-align: center;
     width: 330px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .seccion-links > a{
    margin-right: 10px;
-   color: rgb(120, 114, 114);
+   color: rgb(255, 255, 255);
    font-weight: bold;
 }
 
@@ -363,7 +363,7 @@ a{
     align-items: center;
     border-radius: 40px;
     gap: 80px;
-    /* background-image: linear-gradient(to left top, #cbcbcb, #ccccd0, #cdcdd6, #cdcfdb, #cdd0e1); */
+   background-color: #fff;
     box-shadow: 0 15px 50px #000;
     width: fit-content;
     height: fit-content;
