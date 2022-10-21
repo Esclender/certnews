@@ -62,7 +62,7 @@
     }
     
     .seccion-links{
-        background: radial-gradient(circle ,rgb(89, 90, 85, 0.801), rgba(89, 90, 85, 0.801));
+        background-color: gray;
         border-radius: 20px;
         text-align: center;
         width: 400px;
@@ -75,7 +75,7 @@
     
     .seccion-links > a{
        margin-right: 10px;
-       font-size: 20px;
+       font-weight: bold;
        color: rgb(247, 239, 248);
        
     }

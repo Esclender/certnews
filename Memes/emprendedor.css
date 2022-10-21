@@ -1,8 +1,10 @@
 #main-nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: linear-gradient(to right, #1136e5, #006cfa, #0093fa, #00b3ef, #7dcee5, #a3d9e4, #c6e3e7, #e8eded, #e7eeee, #e6efee, #e5efef, #e4f0ef);
-    background-position: 95%;
+    background-image: url('https://upla.edu.pe/nw/wp-content/uploads/2021/05/como-ser-un-joven-emprendedor-en-el-peru-retos-y-oportunidades-upla.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 45%;
     
     
     height: 120px;
@@ -21,6 +23,8 @@ a{
 }
 *{
     font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 .nav__logo{
     
@@ -51,10 +55,11 @@ a{
 }
 
 .seccion-links{
-    background: radial-gradient(circle ,rgb(89, 90, 85, 0.801), rgba(89, 90, 85, 0.801));
+  background-color: gray;
     border-radius: 20px;
     text-align: center;
     width: 330px;
+    color: #fff;
     
 }
 .seccion-links a:hover{
@@ -63,7 +68,7 @@ a{
 
 .seccion-links > a{
    margin-right: 10px;
-   font-size: 20px;
+   font-weight: bold;
    color: rgb(247, 239, 248);
    
 }
@@ -99,7 +104,6 @@ a{
 
 
 .nav__social-media{
-    background: radial-gradient(circle ,rgb(26, 2, 245), rgb(112, 112, 112));
     padding-top: 4px;
     padding-left: 2px;
     border-radius: 10px;
@@ -125,11 +129,8 @@ a{
 h1{
     font-size: 35px;
     color: rgb(10, 6, 4);
-    font-family:'Times New Roman', Times, serif;
     width:420px;
-    height:50px ;  
-    border-top: rgb(28, 102, 187) 4px solid;
-    border-bottom: rgb(28, 102, 187) 4px solid;
+    height:50px ;
 }
 .bordes{
     margin-top: 25px;
@@ -343,25 +344,82 @@ h1{
     opacity: 1;
     backdrop-filter: blur(10px);
 }
+
+
 footer{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 130px;
-    background-color: #000;
-    
-    
-}
-footer img{
-    position: absolute;
-    width: 200px;
-    bottom: 0;
-    left: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 1124px;
+  width: 100%;
+  background: rgb(245, 245, 245);
+
+  height: 300px;
 }
 
-footer span{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: #fff;
+footer .topbar{
+  display: flex;
+  width: 100%;
+  height: 85px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+
+footer .topbar img{
+  width: 150px;
+}
+
+footer .topbar .redes{
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+
+footer .topbar .redes i{
+  color: rgb(60, 60, 60);
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+footer .sitemap{
+  display: flex;
+  width: 100%;
+}
+
+footer .sitemap .col{
+  width: 25%;
+  padding-left: 25px;
+}
+
+footer .sitemap ul{
+  padding: 0%;
+  list-style-type: none;
+}
+
+footer .sitemap ul li{
+  font-family: Oswald-Regular, sans-serif;
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+
+footer .sitemap ul li span{
+  color: rgb(60, 60, 60);
+  font-family: Oswald-Bold, sans-serif;
+}
+
+footer .sitemap ul li a{
+  color: gray;
+  text-decoration: none;
+}
+
+footer .copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  font-family: Oswald-Regular, sans-serif;
+  font-size: 14px;
+  color: rgb(60, 60, 60);
 }

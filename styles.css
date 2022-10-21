@@ -302,6 +302,9 @@ a{
     position: relative;
     width: fit-content;
     height: fit-content;
+    overflow: hidden;
+    
+    border-radius: 20px;
 }
 
 .secundary-notices .image-hover > img{
@@ -344,7 +347,7 @@ a{
 .secundary-notices  .blur5{
     
     width: 270px;
-    height: 190px;
+    height: 205px;
 }
 
 .secundary-notices  .blur2{
@@ -401,8 +404,8 @@ a{
     width: fit-content;
     height: fit-content;
     position: relative;
-    
-    
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 .little-noticies{
@@ -441,7 +444,6 @@ a{
 
 
 .blur{
-    
     position: absolute;
     border-radius: 20px;
    
@@ -467,11 +469,9 @@ a{
     backdrop-filter: blur(10px);
 }
 
-
-
-
-
-
+.image-hover:hover > img{
+    transform: scale(1.4);
+}
 
 
 

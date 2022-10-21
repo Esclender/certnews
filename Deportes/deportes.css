@@ -30,6 +30,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Oswald-Regular, sans-serif;
 }
 
 body{
@@ -89,6 +90,7 @@ a{
     height: 50px;
     border-radius: 20px;
     padding: 0 5px;
+    background-color: #fff;
 }
 
 .nav__bar > img{
@@ -98,9 +100,8 @@ a{
 
 
 .nav__logo > img{
-    width: 120px;
+    width: 140px;
     height: 80px;
-    margin-bottom: 20px;
 }
 
 .seccion-links{
@@ -111,9 +112,13 @@ a{
     color: #fff;
 }
 
+.seccion-links a:hover{
+    color: rgb(8, 12, 206);
+}
+
 .seccion-links > a{
    margin-right: 10px;
-   font-size: 15px;
+   font-weight: bold;
    color: #fff;
 }
 
@@ -127,6 +132,7 @@ a{
     width: 60px;
     text-align: center;
     border-radius: 20px;
+    background-color: #fff;
 }
 
 .nav__login-user{
@@ -164,7 +170,7 @@ a{
 .nav__social-media + span{
     color: #fff;
     position: absolute;
-    top: 65%;
+    top: 50%;
     right: 50px;
     font-size: 20px;
     font-weight: bold;
