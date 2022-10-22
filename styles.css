@@ -86,9 +86,6 @@ a{
    font-weight: bold;
 }
 
-.seccion-links a:hover{
-    color: rgb(8, 12, 206);
-  }
 
 .login{
     text-align: right;

@@ -69,9 +69,7 @@
         color: #fff;
         
     }
-    .seccion-links a:hover{
-      color: rgb(8, 12, 206);
-    }
+
     
     .seccion-links > a{
        margin-right: 10px;
