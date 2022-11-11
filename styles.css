@@ -35,6 +35,10 @@ body{
     padding-top: 20px;
 }
 
+.bloquear{
+    overflow: hidden;
+}
+
 a{
     text-decoration: none;
 }
@@ -54,6 +58,49 @@ a{
     height: 50px;
     border-radius: 20px;
     padding: 0 5px;
+    cursor: pointer;
+}
+
+.Menu{
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    margin-left: -2010px;
+    top: 10px;
+    height: 97%;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.415);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(
+        auto-fill, minmax(100px, 1fr));
+
+        transition: 1s;
+}
+
+.Menu a{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items:center ;
+    gap: 20px;
+    font-weight: bold;
+    color: #044eaf;
+    position: relative;
+}
+
+.Menu > i{
+    position: absolute;
+    font-size: 35px;
+    color: #006cfa;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 .nav__bar > img{
@@ -72,19 +119,7 @@ a{
     margin-bottom: 5px;
 }
 
-.seccion-links{
-    background-color: gray;
-    border-radius: 20px;
-    text-align: center;
-    width: 330px;
-    color: #ffffff;
-}
 
-.seccion-links > a{
-   margin-right: 10px;
-   color: rgb(255, 255, 255);
-   font-weight: bold;
-}
 
 
 .login{
